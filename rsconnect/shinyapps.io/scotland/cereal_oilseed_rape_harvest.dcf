@@ -1,0 +1,13 @@
+name: cereal_oilseed_rape_harvest
+title:
+username:
+account: scotland
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7873600
+bundleId: 6631039
+url: https://scotland.shinyapps.io/cereal_oilseed_rape_harvest/
+when: 1670925797.7198
+lastSyncTime: 1670925797.7198
+asMultiple: FALSE
+asStatic: FALSE

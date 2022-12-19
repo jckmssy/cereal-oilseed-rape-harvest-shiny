@@ -23,7 +23,7 @@ PAY_type <- c("Production", "Area", "Yield")
 
 ui <- fluidPage( 
  
-
+  tags$head(tags$title("SG - Cereal and Oilseed Rape  Harvest")),
   
     tags$head(includeHTML(("google-analytics.html")),
         tags$link(rel = "stylesheet", type = "text/css", href = c("style.css")),
@@ -32,9 +32,8 @@ ui <- fluidPage(
         titlePanel(
             div(column(width = 2, tags$img(src = "RESAS Logo.png", align = "left",  width = "60%")),
                 column(width = 7, h1("Cereal and Oilseed Rape Harvest in Scotland",tags$img(src = "NS logo.jpg",  width = "5%") )),
-                #column(width = 1, tags$img(src = "NS logo.jpg",  width = "70%", align = "left")),
-                column(width = 2, tags$img(src = "sg.png", align = "right",  width = "100%")),
-                windowTitle="SG - Cereal and Oilseed Rape  Harvest ")
+                column(width = 2, tags$img(src = "sg.png", align = "right",  width = "100%")))
+           
             ),
         
         br(), br(),br(), br(),

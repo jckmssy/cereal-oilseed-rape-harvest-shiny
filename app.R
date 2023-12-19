@@ -61,17 +61,17 @@ ui <- fluidPage(
                      sliderInput( 
                    "year",
                    "Select year range", 
-                   value = c(2003, 2022), 
-                   min = 2003, max = 2022, step = 1, sep = "", ticks = TRUE
+                   value = c(2003, 2023), 
+                   min = 2003, max = 2023, step = 1, sep = "", ticks = TRUE
                  ))
                 )),
             
             div(mainPanel(width = 10,
                #########TO IMPROVE: MOVE THE TEXT TO EXTERNAL FILE- CLEANER CODE#####
                  tabsetPanel(type = "tabs", 
-                    tabPanel("Information", h2("Notes on the data"),p("These interactive charts are based on the final estimates of area, yield and production for spring and winter barley, wheat, oats and oilseed rape in Scotland. Data cover the period from 2003 to the latest 2022 harvest."), 
+                    tabPanel("Information", h2("Notes on the data"),p("These interactive charts are based on the final estimates of area, yield and production for spring and winter barley, wheat, oats and oilseed rape in Scotland. Data cover the period from 2003 to the latest 2023 harvest."), 
                                                                       p("Data are available in the", tags$a(href="https://www.gov.scot/collections/scottish-cereal-harvest-estimates", target ="_blank", "Scottish cereal harvest: estimates (link opens in a new window).")), 
-                                                                      p("Information about data sources is provided in the", tags$a(href="https://www.gov.scot/publications/cereal-and-oilseed-rape-harvest-2022-final-estimates/pages/data-sources-and-more-information", target = "_blank", "methodology (link opens in a new window).")),
+                                                                      p("Information about data sources is provided in the", tags$a(href="https://www.gov.scot/publications/cereal-and-oilseed-rape-harvest-methodology/", target = "_blank", "methodology (link opens in a new window).")),
                              br(), 
                                            h2("How to plot the data"), p("The sidebar on the left displays options for you to choose from. An interactive chart will display the data for the options you have selected in the 'Plot' tab."),
                                            p("The 'Summary' tab displays a general overview of the latest harvest year, along with tables of the latest figures and percentage changes from the last year to the current."),
@@ -79,12 +79,12 @@ ui <- fluidPage(
                                            p("The 'Data Table' tab displays the table of data used in the interactive chart. There is an option to download a 'csv' file of the data, by clicking on the 'Download the data' link below the table.")),
                                            
                                   
-                    tabPanel("Summary", h1("Key findings for the 2022 Scottish harvest", size = "20px"),
+                    tabPanel("Summary", h1("Key findings for the 2023 Scottish harvest", size = "20px"),
                               
-                             p("Total cereal production from the 2022 harvest was 3.1 million tonnes. This is a 10% increase compared to 2021 and the highest level since 2014."), 
-                             p("Total cereal yield was 7.6 tonnes per hectare, the highest record of the last 20 years. Winter barley, wheat and oilseed rape yields were also their highest in the past two decades."),
-                             p("Dry and hot weather conditions in spring and summer resulted in a remarkably early harvest and reduced the need for drying."),
-                             p("Production increased despite decreases in the sown area of spring barley and oats. The record yields of 2022 offset reductions in area."),  
+                             p("Total cereal production from the 2023 harvest is just under 3.1 million tonnes. This is a 2% decrease compared to 2022 and just above the ten-year average of 3.0 million tonnes."), 
+                             p("Weather conditions in 2023 led to one of the more challenging harvests in recent years. Overall cereal production decreased despite a small increase in planted area."),
+                             p("Production decreased for barley, wheat and oats compared to 2022. This was mostly as a result of decreased yield."),
+                             p("Oilseed rape production reached its highest value in at least 20 years at around 166 thousand tonnes. The 2023 area of oilseed rape is the largest recorded in at least 20 years, at around 41 thousand hectares. Combined with an above average yield this made for a very good year for oilseed rape production."),  
                              br(), 
                              (tags$img(src = "vs.png", align = "center",  width = "100%"))),
                              
